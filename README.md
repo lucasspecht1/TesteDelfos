@@ -11,7 +11,7 @@ Teste Prático Delfos
 - Para rodar os containers basta executar `docker compose up`.
 - Todos os containers estarão previamente configurados para execução.
 
-[![My Skills](https://skillicons.dev/icons?i=postgresql)](https://skillicons.dev) Banco de dados Fonte
+[![My Skills](https://skillicons.dev/icons?i=postgresql)](https://skillicons.dev) [Banco de dados Fonte](https://github.com/lucasspecht1/Teste_Data_Eng/tree/BancoFonte)
 ------------------
 Infos:
   - Porta externa: 5000
@@ -30,7 +30,7 @@ Os dados estão organizados da seguinte da forma:
   - power (leitura de geração em 'kw')
   - ambient_temperature (leitura de temperatura em 'ºC')
 
-[![My Skills](https://skillicons.dev/icons?i=postgresql)](https://skillicons.dev) Banco de dados Alvo
+[![My Skills](https://skillicons.dev/icons?i=postgresql)](https://skillicons.dev) [Banco de dados Alvo](https://github.com/lucasspecht1/Teste_Data_Eng/tree/BancoAlvo)
 ------------------
 Infos:
   - Porta externa: 5001
@@ -40,7 +40,7 @@ Infos:
 _Este container contendo o Banco de dados possui a tag `db_alvo` no docker,_
 _possui configuração preedefinada inserida na primeira execução de `docker compose up`._
 
-[![My Skills](https://skillicons.dev/icons?i=fastapi)](https://skillicons.dev) Server FastAPI
+[![My Skills](https://skillicons.dev/icons?i=fastapi)](https://skillicons.dev) [Server FastAPI](https://github.com/lucasspecht1/Teste_Data_Eng/tree/ServerFastAPI)
 ------------------
 
 Infos:
@@ -83,5 +83,5 @@ Rotas existentes:
         - **opcional** - colunas: Lista contendo as colunas desejadas 
                          Exemplo: ['timestamp', 'power']
 
-[![My Skills](https://skillicons.dev/icons?i=python)](https://skillicons.dev) Script ETL
+[![My Skills](https://skillicons.dev/icons?i=python)](https://skillicons.dev) [Pipeline ETL](https://github.com/lucasspecht1/Teste_Data_Eng/tree/Pipeline)
 ------------------
