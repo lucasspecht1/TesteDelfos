@@ -1,0 +1,46 @@
+services:
+  db_fonte:
+    image: postgres:latest
+    ports: ['5000:5432']
+    container_name: db_fonte
+    restart: always
+    environment:
+      POSTGRES_DB: fonte
+      POSTGRES_USER: user_fonte
+      POSTGRES_PASSWORD: 12345
+    volumes:
+      - ./db_fonte:/docker-entrypoint-initdb.d
+    networks:
+      - intern_network
+
+  db_alvo:
+    image: postgres:latest
+    ports: ['5001:5432']
+    container_name: db_alvo
+    restart: always
+    environment:
+      POSTGRES_DB: alvo
+      POSTGRES_USER: user_alvo
+      POSTGRES_PASSWORD: 12345
+    volumes:
+      - ./db_alvo:/docker-entrypoint-initdb.d
+    networks:
+      - intern_network
+
+  ServerFastAPI:
+    image: python:latest
+    ports: ['8000:8000']
+    container_name: ServerFastAPI
+    working_dir: /ServerFastAPI
+    restart: always
+    entrypoint: bash -c "pip3 install -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8000"
+    volumes:
+      - ./ServerFastAPI:/ServerFastAPI
+    depends_on:
+      - db_fonte
+    networks:
+      - intern_network
+
+networks:
+  intern_network:
+    driver: bridge

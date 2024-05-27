@@ -34,7 +34,7 @@ Infos:
   - senha: 12345
 
 _Este container contendo o Banco de dados possui a tag `db_alvo` no docker,_
-_possui configuração preedefinada inserida na prima execução de `docker compose up`._
+_possui configuração preedefinada inserida na primeira execução de `docker compose up`._
 
 [![My Skills](https://skillicons.dev/icons?i=fastapi)](https://skillicons.dev) Server FastAPI
 ------------------
