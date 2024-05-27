@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+typing
+datetime
+sqlalchemy
+psycopg2
