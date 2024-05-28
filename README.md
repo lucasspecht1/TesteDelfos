@@ -1,10 +1,5 @@
-API para consulta de dados ao Banco Fonte 
-
-Server Fastapi
-==============
-
-🖥️ Informações importantes
---------------------------
+[![My Skills](https://skillicons.dev/icons?i=fastapi)](https://skillicons.dev) [Server FastAPI](https://github.com/lucasspecht1/Teste_Data_Eng/tree/ServerFastAPI)
+------------------
 
 Infos:
   - Rota base: `http://localhost:8000`
@@ -45,8 +40,3 @@ Rotas existentes:
 
         - **opcional** - colunas: Lista contendo as colunas desejadas 
                          Exemplo: ['timestamp', 'power']
-
-🛠️ Construído com
-------------------
-
-* [FastAPI](https://fastapi.tiangolo.com/)
