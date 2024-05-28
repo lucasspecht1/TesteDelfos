@@ -27,10 +27,11 @@ services:
     networks:
       - intern_network
 
-  ServerFastAPI:
+  server-fastapi:
     image: python:latest
     ports: ['8000:8000']
-    container_name: ServerFastAPI
+    expose: [8000]
+    container_name: server-fastapi
     working_dir: /ServerFastAPI
     restart: always
     entrypoint: bash -c "pip3 install -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8000"
@@ -38,6 +39,22 @@ services:
       - ./ServerFastAPI:/ServerFastAPI
     depends_on:
       - db_fonte
+    networks:
+      - intern_network
+
+  pipeline:
+    image: python:latest
+    ports: ['3000:3000']
+    expose: [3000]
+    container_name: pipeline
+    working_dir: /Pipeline
+    restart: always
+    entrypoint: bash -c "pip3 install -r requirements.txt && ls && dagster dev -h 0.0.0.0 -p 3000"
+    volumes:
+      - ./Pipeline:/Pipeline
+    depends_on:
+      - server-fastapi
+      - db_alvo
     networks:
       - intern_network
 

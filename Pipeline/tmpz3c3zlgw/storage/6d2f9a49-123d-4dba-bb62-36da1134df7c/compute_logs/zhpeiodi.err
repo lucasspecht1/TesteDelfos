@@ -1,0 +1,8 @@
+2024-05-28 00:42:26 +0000 - dagster - DEBUG - run - 6d2f9a49-123d-4dba-bb62-36da1134df7c - 1482 - LOGS_CAPTURED - Started capturing logs in process (pid: 1482).
+2024-05-28 00:42:26 +0000 - dagster - DEBUG - run - 6d2f9a49-123d-4dba-bb62-36da1134df7c - 1482 - get_data_by_day - STEP_START - Started execution of step "get_data_by_day".
+2024-05-28 00:42:26 +0000 - dagster - DEBUG - run - 6d2f9a49-123d-4dba-bb62-36da1134df7c - 1482 - get_data_by_day - STEP_INPUT - Got input "dia" of type "String". (Type check passed).
+2024-05-28 00:42:26 +0000 - dagster - DEBUG - run - 6d2f9a49-123d-4dba-bb62-36da1134df7c - 1482 - get_data_by_day - STEP_INPUT - Got input "colunas" of type "[Any]". (Type check passed).
+2024-05-28 00:42:26 +0000 - dagster - DEBUG - run - 6d2f9a49-123d-4dba-bb62-36da1134df7c - 1482 - get_data_by_day - STEP_OUTPUT - Yielded output "result" of type "[dict]". (Type check passed).
+2024-05-28 00:42:26 +0000 - dagster - DEBUG - run - 6d2f9a49-123d-4dba-bb62-36da1134df7c - get_data_by_day - Writing file at: /Pipeline/tmpz3c3zlgw/storage/6d2f9a49-123d-4dba-bb62-36da1134df7c/get_data_by_day/result using PickledObjectFilesystemIOManager...
+2024-05-28 00:42:26 +0000 - dagster - DEBUG - run - 6d2f9a49-123d-4dba-bb62-36da1134df7c - 1482 - get_data_by_day - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2024-05-28 00:42:27 +0000 - dagster - DEBUG - run - 6d2f9a49-123d-4dba-bb62-36da1134df7c - 1482 - get_data_by_day - STEP_SUCCESS - Finished execution of step "get_data_by_day" in 348ms.

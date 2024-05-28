@@ -7,17 +7,6 @@ from fastapi import APIRouter, Query
 
 router = APIRouter()
 
-@router.get('/')
-def return_documentation(): 
-    """
-    Rota para retornar a documentação de utilização da API no navegador.
-
-    todo: adicionar documentação
-
-    return: Arquivo HTML contendo a documentação da API.
-    """
-    return f'Hello'
-
 @router.get("/get/last")
 def return_last(colunas: List[str] = Query(COLUNAS)) -> dict | None:
     """

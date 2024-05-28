@@ -1,0 +1,1 @@
+COLUNAS = ['timestamp', 'power', 'wind_speed', 'ambient_temperature']
