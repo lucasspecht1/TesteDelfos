@@ -104,9 +104,9 @@ _desta forma o Dagster irá executar o método principal da ETL, executando todo
 
 **2º Forma**
 ------------
-_Executando diretamente o script python, dentro da pasta `/Pipeline` 
+_Executando diretamente o script python, dentro da pasta `/Pipeline` _
 _temos um arquivo chamado `main.py` este arquivo será utilizado para executar o Script_
-_para isso deveremos rodar o seguinte comando: `python3 /Pipeline/main.py -t <dia_escolhido>`, 
+_para isso deveremos rodar o seguinte comando: `python3 /Pipeline/main.py -t <dia_escolhido>`, _
 _onde o script sera executado com o argumento do dia a ser processado, utilizamos `-t ou --timestamp` seguido do dia no formato: `yyyy-mm-dd`_
 _caso nenhum dia sejá informado o dia padrão é o primeiro: (2024-05-01)_
 
